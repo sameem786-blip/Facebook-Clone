@@ -22,12 +22,13 @@
 }
 
 .headerLeft {
+  border: 2px solid red;
   display: flex;
   justify-content: flex-start;
+  width: 30%;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 50%;
   height: 100%;
 }
 
@@ -50,4 +51,28 @@
 
 .headerSearch::placeholder {
   color: gray;
+}
+
+.headerCenter {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 40%;
+  height: 100%;
+  color: black;
+}
+
+.headerRight {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 30%;
+  height: 100%;
+  color: black;
 }
