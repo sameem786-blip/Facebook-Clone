@@ -12,6 +12,42 @@ function Header() {
                     <input type="text" placeholder="Search Facebook" className={styles.headerSearch} />
                 </div>
             </div>
+            <div className={styles.headerCenter}>
+                <div className={styles.headerHome}>
+                    Home
+                </div>
+                <div className={styles.headerWatch}>
+                    Home
+                </div>
+                <div className={styles.headerMarketplace}>
+                    Home
+                </div>
+                <div className={styles.headerGroups}>
+                    Home
+                </div>
+                <div className={styles.headerGaming}>
+                    Home
+                </div>
+
+            </div>
+            <div className={styles.headerRight}>
+                <div className={styles.headerHome}>
+                    Home
+                </div>
+                <div className={styles.headerWatch}>
+                    Home
+                </div>
+                <div className={styles.headerMarketplace}>
+                    Home
+                </div>
+                <div className={styles.headerGroups}>
+                    Home
+                </div>
+                <div className={styles.headerGaming}>
+                    Home
+                </div>
+
+            </div>
 
         </div>
     )
