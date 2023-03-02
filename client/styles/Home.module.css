@@ -1,5 +1,5 @@
 .body {
-  background: #dee2e6;
+  background: #F0F2F5;
 
 }
 
@@ -22,7 +22,6 @@
 }
 
 .headerLeft {
-  border: 2px solid red;
   display: flex;
   justify-content: flex-start;
   width: 30%;
@@ -45,7 +44,7 @@
   padding-bottom: 2px;
   border: none;
   outline: none;
-  background-color: #dee2e6;
+  background-color: #F0F2F5;
   color: black;
 }
 
@@ -54,25 +53,82 @@
 }
 
 .headerCenter {
-  border: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 40%;
   height: 100%;
-  color: black;
+  color: gray;
+  padding: 0 20px;
+}
+
+
+
+.headerIconContainer {
+  border: 0px;
+  padding: 0px 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.headerIconContainer:hover {
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #F0F2F5;
+}
+
+.headerIconParent {
+  border-bottom: 3px solid white;
+  padding: 3px 0px;
+}
+
+.headerIconParentActive {
+  border-bottom: 3px solid #166FE5;
+  padding: 3px 0px;
+  color: #166FE5;
+}
+
+
+.headerIcon {
+  font-size: 35px;
 }
 
 .headerRight {
-  border: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 30%;
   height: 100%;
   color: black;
+}
+
+.headerRightCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #dee2e6;
+  overflow: hidden;
+}
+
+.headerProfilePic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.headerRightCircle:hover {
+  cursor: pointer;
+  background-color: #c2c4c6;
 }
