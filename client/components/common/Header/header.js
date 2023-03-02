@@ -33,6 +33,7 @@ function Header() {
                     <div className={`${router.pathname == '/' ? styles.headerIconParentActive : styles.headerIconParent}`}>
                         <div className={styles.headerIconContainer}>
                             <HouseOutlinedIcon className={styles.headerIcon} />
+                            <span className={styles.headerCenterSpan}>Home</span>
                         </div>
                     </div>
                 </Link>
@@ -40,6 +41,7 @@ function Header() {
                     <div className={styles.headerIconParent}>
                         <div className={styles.headerIconContainer}>
                             <OndemandVideoOutlinedIcon className={styles.headerIcon} />
+                            <span className={styles.headerCenterSpan}>Watch</span>
                         </div>
                     </div>
                 </Link>
@@ -47,6 +49,7 @@ function Header() {
                     <div className={styles.headerIconParent}>
                         <div className={styles.headerIconContainer}>
                             <StoreOutlinedIcon className={styles.headerIcon} />
+                            <span className={styles.headerCenterSpan}>Marketplace</span>
                         </div>
                     </div>
                 </Link>
@@ -54,6 +57,7 @@ function Header() {
                     <div className={styles.headerIconParent}>
                         <div className={styles.headerIconContainer}>
                             <GroupsIcon className={styles.headerIcon} />
+                            <span className={styles.headerCenterSpan}>Groups</span>
                         </div>
                     </div>
                 </Link>
@@ -61,6 +65,7 @@ function Header() {
                     <div className={styles.headerIconParent}>
                         <div className={styles.headerIconContainer}>
                             <VideogameAssetOutlinedIcon className={styles.headerIcon} />
+                            <span className={styles.headerCenterSpan}>Gaming</span>
                         </div>
                     </div>
                 </Link>
@@ -69,15 +74,19 @@ function Header() {
             <div className={styles.headerRight}>
                 <div className={styles.headerRightCircle}>
                     <WidgetsIcon />
+                    <span className={styles.headerCenterSpan}>Menu</span>
                 </div>
                 <div className={styles.headerRightCircle}>
                     <QuestionAnswerIcon />
+                    <span className={styles.headerCenterSpan}>Chats</span>
                 </div>
                 <div className={styles.headerRightCircle}>
                     <NotificationsIcon />
+                    <span className={styles.headerCenterSpan}>Notifications</span>
                 </div>
                 <div className={styles.headerRightCircle}>
                     <Image src="/profile.jpg" width={45} height={45} className={styles.headerProfilePic} />
+                    <span className={styles.headerCenterSpan}>Account</span>
                 </div>
 
             </div>
