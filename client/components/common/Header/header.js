@@ -22,7 +22,9 @@ function Header() {
         <div className={styles.header}>
             <div className={styles.headerLeft}>
                 <div>
-                    <Image src="/facebook.png" alt="facebook" width={37} height={37} />
+                    <Link href="/" >
+                        <Image src="/facebook.png" alt="facebook" width={37} height={37} />
+                    </Link>
                 </div>
                 <div className={styles.headerSearchContainer}>
                     <input type="text" placeholder="Search Facebook" className={styles.headerSearch} />

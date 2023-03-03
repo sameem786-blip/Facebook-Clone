@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'SegoeUI400';
+  src: url('../public/fonts/Segoe/SegoeUI.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SegoeUI500';
+  src: url('../public/fonts/Segoe/SegoeUI.ttf');
+  font-weight: 500;
+}
+
 .body {
   background: #F0F2F5;
 
 }
 
-@media only screen and (min-width: 992px) {
+
+/* Header Start */
+@media only screen and (min-width: 700px) {
 
   .header {
     position: fixed;
@@ -21,6 +35,8 @@
     transition: all 0.5s ease;
     font-size: large;
     padding-left: 25px;
+    font-family: 'SegoeUI400';
+    letter-spacing: 1px;
   }
 
   .headerLeft {
@@ -48,10 +64,12 @@
     outline: none;
     background-color: #F0F2F5;
     color: black;
+    letter-spacing: 1px;
   }
 
   .headerSearch::placeholder {
     color: gray;
+    letter-spacing: 1px;
   }
 
   .headerCenter {
@@ -97,9 +115,9 @@
   }
 
   .headerIconParentActive {
-    border-bottom: 3px solid #166FE5;
+    border-bottom: 3px solid #1B74E4;
     padding: 3px 0px;
-    color: #166FE5;
+    color: #1B74E4;
   }
 
 
@@ -146,8 +164,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     margin-right: 10px;
     background-color: #dee2e6;
@@ -173,16 +191,76 @@
 
 }
 
-@media only screen and (max-width: 768px) {
-  .headerCenter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 40%;
-    height: 100%;
-    color: black;
-    padding: 0 20px;
-  }
+@media only screen and (max-width: 700px) {}
+
+/*Header End */
+
+/*Dashboard Start */
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'SegoeUI';
+  border: 2px solid red;
 }
+
+.dashboardLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 25%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.dashboardLeftActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 95%;
+  height: 100%;
+  color: black;
+  padding: 5px;
+  margin: 2px;
+}
+
+.dashboardLeftActions:hover {
+  cursor: pointer;
+  background-color: #dee2e6;
+  border-radius: 10px;
+}
+
+.dashboardLeftActionsIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.dashboardLeftIcon {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+}
+
+.dashboardLeftText {
+  font-family: "SegoeUI500";
+}
+
+/*Dashboard End */
