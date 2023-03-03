@@ -10,8 +10,10 @@ import StoreIcon from '@mui/icons-material/Store';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import HistoryIcon from '@mui/icons-material/History';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
-
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import VideoCameraFrontRoundedIcon from '@mui/icons-material/VideoCameraFrontRounded';
+import CollectionsRoundedIcon from '@mui/icons-material/CollectionsRounded';
+import MoodRoundedIcon from '@mui/icons-material/MoodRounded';
 
 function Dashboard() {
     return (
@@ -132,9 +134,171 @@ function Dashboard() {
                         See More
                     </div>
                 </div>
-                <div className={styles.dashboardLeftShortcuts}>
+                <div className={styles.dashboardLeftLineBreak}>
+                </div>
+                <div className={styles.dashboardRightHeading}>
+                    <div className={styles.dashboardRightHeadingText}>
+                        Shortcuts
+                    </div>
+                    <div className={styles.dashboardRightHeadingIcon}>
+                        <MoreHorizIcon />
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Student Community @ DHA Suffa University
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        DHA Suffa University Model United Nations
+                    </div>
                 </div>
             </div>
+            <div className={styles.dashboardCenter}>
+                <div className={styles.dashboardCreatePost}>
+                    <div className={styles.dashboardCreatePostContainer}>
+                        <div className={styles.dashboardLeftActionsIconContainer}>
+                            <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        </div>
+                        <div className={styles.headerSearchContainer}>
+                            <input type="text" placeholder="Search Facebook" className={styles.dashboardCreatePostInput} />
+                        </div>
+
+                    </div>
+                    <div className={styles.dashboardCreatePostContainer}>
+                        <div className={styles.dashboardCreatePostLineBreak}>
+                        </div>
+                    </div>
+                    <div className={styles.dashboardCreatePostContainer}>
+                        <div className={styles.dashboardCreatePostActions}>
+                            <VideoCameraFrontRoundedIcon className={styles.createPostVideo} />
+                            <div className={styles.dashboardCreatePostActionsDesc}>
+                                Live Video
+                            </div>
+                        </div>
+                        <div className={styles.dashboardCreatePostActions}>
+                            <CollectionsRoundedIcon className={styles.createPostGallery} />
+                            <div className={styles.dashboardCreatePostActionsDesc}>
+                                Photo/video
+                            </div>
+                        </div>
+                        <div className={styles.dashboardCreatePostActions}>
+                            <MoodRoundedIcon className={styles.createPostEmoji} />
+                            <div className={styles.dashboardCreatePostActionsDesc}>
+                                Feeling/activity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.dashboardRight}>
+                <div className={styles.dashboardRightHeading}>
+                    <div className={styles.dashboardRightHeadingText}>
+                        Your Pages and profiles
+                    </div>
+                    <div className={styles.dashboardRightHeadingIcon}>
+                        <MoreHorizIcon />
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        DHA Suffa University Model United Nations
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftLineBreak}>
+                </div>
+                <div className={styles.dashboardRightHeading}>
+                    <div className={styles.dashboardRightHeadingText}>
+                        Contacts
+                    </div>
+                    <div className={styles.dashboardRightHeadingIcon}>
+                        <MoreHorizIcon />
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Muhammad Ali
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Shyam Gopal Bajaj
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Ram Gopal Bajaj
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Murli Prasad Sharma
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Saleem Jahanzaib
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Saifullah Khan
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Akbar Khan
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Aurangzeb Alamgir
+                    </div>
+                </div>
+                <div className={styles.dashboardLeftActions}>
+                    <div className={styles.dashboardLeftActionsIconContainer}>
+                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                    </div>
+                    <div className={styles.dashboardLeftText}>
+                        Babar Azam
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
