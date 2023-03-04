@@ -15,6 +15,8 @@ import VideoCameraFrontRoundedIcon from '@mui/icons-material/VideoCameraFrontRou
 import CollectionsRoundedIcon from '@mui/icons-material/CollectionsRounded';
 import MoodRoundedIcon from '@mui/icons-material/MoodRounded';
 
+import publicPost from "../publicPosts/publicPosts";
+
 function Dashboard() {
     return (
         <div className={styles.dashboard}>
@@ -197,6 +199,10 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.dashboardPublicPost}>
+                    <publicPost />
+                </div>
+
             </div>
             <div className={styles.dashboardRight}>
                 <div className={styles.dashboardRightHeading}>

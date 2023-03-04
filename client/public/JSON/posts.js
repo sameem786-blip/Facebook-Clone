@@ -26,4 +26,6 @@ const postPool = [
         "postComments": "10",
         "postedOn": "11 February 2021"
     }
-]
+];
+
+export default postPool;
