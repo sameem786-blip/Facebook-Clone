@@ -273,7 +273,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   color: black;
   width: 40%;
   padding: 10px;
@@ -281,7 +281,7 @@
 
 .dashboardCreatePost {
   background: white;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
   padding: 10px;
 }
@@ -360,6 +360,133 @@
   color: #F1B72E;
   height: 30px;
   width: 50px;
+}
+
+.dashboardPublicPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: white;
+  font-family: "SegoeUI500";
+}
+
+.postHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.postHeaderPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 2px;
+  overflow: hidden;
+}
+
+.postOwnerTime {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+
+.owner {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.owner:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.duration {
+  font-size: 12px;
+  color: gray;
+}
+
+.postHeaderOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  overflow: hidden;
+  color: gray;
+}
+
+.postHeaderOptions:hover {
+  background: #F0F2F5;
+  cursor: pointer;
+}
+
+.postBody {
+  padding: 10px;
+}
+
+.postMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #F0F2F5;
+  border-bottom: 1px solid #F0F2F5;
+}
+
+.postMediaPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.postReactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.postLikes {
+  color: #1B74E4;
+}
+
+.postCommentShares {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  color: gray;
+  font-size: 12px;
 }
 
 .dashboardRight {
