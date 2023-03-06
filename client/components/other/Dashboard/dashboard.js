@@ -199,9 +199,8 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.dashboardPublicPost}>
-                    <PublicPosts />
-                </div>
+
+                <PublicPosts />
 
             </div>
             <div className={styles.dashboardRight}>
