@@ -32,7 +32,7 @@ function Header() {
             </div>
             <div className={styles.headerCenter}>
                 <Link href="/" >
-                    <div className={`${router.pathname == '/' ? styles.headerIconParentActive : styles.headerIconParent}`}>
+                    <div className={`${router.pathname == '/home' ? styles.headerIconParentActive : styles.headerIconParent}`}>
                         <div className={styles.headerIconContainer}>
                             <HouseOutlinedIcon className={styles.headerIcon} />
                             <span className={styles.headerCenterSpan}>Home</span>

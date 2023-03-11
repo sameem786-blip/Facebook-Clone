@@ -18,8 +18,7 @@ export default function Home() {
         <link rel="icon" href="/facebook.png" />
       </Head>
       <div>
-        <Header />
-        <Dashboard />
+
       </div>
     </>
   )
