@@ -13,8 +13,11 @@ import VideogameAssetOutlinedIcon from '@mui/icons-material/VideogameAssetOutlin
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { render, screen, fireEvent } from '@testing-library/react';
+import mockRouter from 'next-router-mock';
 
-function Header() {
+
+const Header = () => {
 
     const router = useRouter();
 
@@ -22,7 +25,7 @@ function Header() {
         <div className={styles.header}>
             <div className={styles.headerLeft}>
                 <div>
-                    <Link href="/" >
+                    <Link href="/home" >
                         <Image src="/facebook.png" alt="facebook" width={37} height={37} />
                     </Link>
                 </div>
@@ -31,8 +34,8 @@ function Header() {
                 </div>
             </div>
             <div className={styles.headerCenter}>
-                <Link href="/" >
-                    <div className={`${router.pathname == '/home' ? styles.headerIconParentActive : styles.headerIconParent}`}>
+                <Link href="/home" >
+                    <div className={`${router.asPath == '/home' ? styles.headerIconParentActive : styles.headerIconParent}`}>
                         <div className={styles.headerIconContainer}>
                             <HouseOutlinedIcon className={styles.headerIcon} />
                             <span className={styles.headerCenterSpan}>Home</span>

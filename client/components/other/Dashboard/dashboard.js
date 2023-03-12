@@ -23,7 +23,7 @@ function Dashboard() {
             <div className={styles.dashboardLeft}>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Sameem Abbas
@@ -148,7 +148,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/studentcommunity.jpg" alt="studentcommunity" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Student Community @ DHA Suffa University
@@ -156,7 +156,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/studentcommunity.jpg" alt="studentcommunity" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         DHA Suffa University Model United Nations
@@ -167,7 +167,7 @@ function Dashboard() {
                 <div className={styles.dashboardCreatePost}>
                     <div className={styles.dashboardCreatePostContainer}>
                         <div className={styles.dashboardLeftActionsIconContainer}>
-                            <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                            <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                         </div>
                         <div className={styles.headerSearchContainer}>
                             <input type="text" placeholder="Search Facebook" className={styles.dashboardCreatePostInput} />
@@ -214,7 +214,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/studentcommunity.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/studentcommunity.jpg" alt="studentcommunity" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         DHA Suffa University Model United Nations
@@ -232,7 +232,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Muhammad Ali
@@ -240,7 +240,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Shyam Gopal Bajaj
@@ -248,7 +248,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Ram Gopal Bajaj
@@ -256,7 +256,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Murli Prasad Sharma
@@ -264,7 +264,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Saleem Jahanzaib
@@ -272,7 +272,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Saifullah Khan
@@ -280,7 +280,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Akbar Khan
@@ -288,7 +288,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Aurangzeb Alamgir
@@ -296,7 +296,7 @@ function Dashboard() {
                 </div>
                 <div className={styles.dashboardLeftActions}>
                     <div className={styles.dashboardLeftActionsIconContainer}>
-                        <Image src="/profile.jpg" width={40} height={40} className={styles.headerProfilePic} />
+                        <Image src="/profile.jpg" alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                     </div>
                     <div className={styles.dashboardLeftText}>
                         Babar Azam

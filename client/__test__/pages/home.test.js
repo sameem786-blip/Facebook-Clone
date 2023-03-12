@@ -1,18 +1,18 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
 import Home from "../../pages/home";
 
-
+import { useRouter } from 'next/router';
+import { render, screen, fireEvent } from '@testing-library/react';
+import mockRouter from 'next-router-mock';
 import "@testing-library/jest-dom";
 
-test("home page", () => {
-    it("renders without crashing", () => {
+describe("home page", () => {
+
+    beforeEach(() => {
         render(<Home />);
+    });
 
-        const header = screen.getByRole("heading");
-        const header = "Hello World!";
-
-        expect(header).toHaveTextContext(headerText);
-
+    test("has a dashboard", () => {
+        expect(screen.getByLabelText("Dashboard")).toBeInTheDocument();
     });
 });

@@ -29,7 +29,7 @@ function publicPosts() {
                 < div className={styles.dashboardPublicPost}>
                     < div className={styles.postHeader} >
                         <div className={styles.postHeaderPicture}>
-                            <Image src={post.ownerPicture} width={40} height={40} className={styles.headerProfilePic} />
+                            <Image src={post.ownerPicture} alt="profile" width={40} height={40} className={styles.headerProfilePic} />
                         </div>
                         <div className={styles.postOwnerTime}>
                             <p className={styles.owner}>{post.postOwner}</p>
@@ -47,7 +47,7 @@ function publicPosts() {
                         <p className={styles.postBodyText}>{post.postBody}</p>
                     </div>
                     <div className={styles.postMedia}>
-                        <Image src={post.postMedia} width={500} height={500} className={styles.postMediaPic} />
+                        <Image src={post.postMedia} alt="postmedia" width={500} height={500} className={styles.postMediaPic} />
 
                     </div>
                     <div className={styles.postReactions}>

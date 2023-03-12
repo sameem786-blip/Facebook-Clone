@@ -4,8 +4,7 @@ import Dashboard from '@/components/other/Dashboard/dashboard'
 export default function Home() {
     return (
         <div>
-            <Header />
-            <Dashboard />
+            <Dashboard data-testid="dashboardTag" />
         </div>
     )
 }
