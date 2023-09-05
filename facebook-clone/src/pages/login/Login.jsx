@@ -7,18 +7,18 @@ const Login = () => {
         <div className="login">
             <div className="card">
                 <div className="left">
-                    <h1>Welcome Back.</h1>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h1>Welcome Back!</h1>
+                     <p>Please log in to your account to access your dashboard and interact with our platform.</p>
                     <span>Don't have an account? </span>
-                    <Link to="/register">
+                    <Link to="/register" style={{ textDecoration: 'none', color: 'inherit',display: 'block', width: '100%'  }}>
                         <button>Register.</button>
                     </Link>
                  </div>
                  <div className="right">
                      <h1>Login.</h1>
                     <form>
-                         <input type="text" placeholder="Username" />
-                         <input type="password" placeholder="Password" />
+                         <input type="text" placeholder="Username"/>
+                         <input type="password" placeholder="Password"/>
                          <button>Login.</button>
                           {/* <span>Forgot Password?</span> */}
                     </form>

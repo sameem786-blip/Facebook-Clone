@@ -40,7 +40,6 @@
             span {
                 font-size: 14px;
             }
-            
 
             button {
                 width: 50%;
@@ -58,7 +57,7 @@
             padding: 50px;
             display: flex;
             flex-direction: column;
-            gap: 50px;
+            gap: 5px;
             background-color: white;
             ;
 
@@ -70,14 +69,17 @@
             form {
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 15px;
 
                 input {
                     border: none;
                     border-bottom: 1px solid lightgray;
                     padding: 20px 10px;
+                    background: transparent;
                 }
-
+                input:focus {
+                    outline: none;
+                }
                 button {
                     width: 50%;
                     padding: 10px;
