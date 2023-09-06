@@ -2,7 +2,8 @@ import React from 'react'
 import './dashboard.scss'
 const Dashboard = () => {
   return (
-    <div>Home</div>
+    <div className="dashboard">Dashboard
+    </div>
   )
 }
 
