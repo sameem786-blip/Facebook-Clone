@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.scss'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';

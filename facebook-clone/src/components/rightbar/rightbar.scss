@@ -1,3 +1,107 @@
 .rightbar{
-    flex: 3;
+    flex: 4;
+    position: sticky;
+        top: 70px;
+        height: calc(100vh - 70px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    
+        //for schrome safari Opera hide scrollbar
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container{
+            padding: 20px;
+
+            .item{
+
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                padding: 10px;
+                margin-bottom: 20px ;
+                span{
+                    color: gray;
+                }
+
+                .user{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 10px 0px;
+                    position: relative;
+                    .userInfo{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        font-size: 15px;
+
+                        img{
+                            height: 40px;
+                            width: 40px; 
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .online{
+                            width: 10px;
+                            height: 10px;
+                            background-color: #4bcf4b;
+                            border-radius: 50%;
+                            margin-left: 5px;
+                            position: absolute;
+                            top: 0;
+                            left: 25px;
+                        }
+
+                        p{
+                            color: gray;
+                            font-size: 12px;
+
+                        }
+
+                        span{
+                            font-weight: 600;
+                            color: black;
+                            font-size: 13px;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .buttons{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        button{
+                            border: none;
+                            color: white;
+                            padding: 5px;
+                            cursor: pointer;
+
+                            &:first-child{
+                                background-color: #5271ff;
+
+                            }
+
+                             &:last-child{
+                                background-color: #f0544f;
+                                
+                            }
+                        }
+
+                    }
+
+                    span{
+                        font-size: 10px;
+                        font-weight: 200;  
+                    }
+                }
+            }
+        }
 }

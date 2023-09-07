@@ -17,6 +17,12 @@
             font-size: 20px;
             color: darkblue;
         }
+
+        .theme-toggle {
+            cursor: pointer;
+            margin-left: 10px; 
+        }
+        
         .search{
             display: flex;
             align-items: center;
