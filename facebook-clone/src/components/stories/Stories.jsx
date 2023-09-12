@@ -28,7 +28,10 @@ const Stories = () => {
           <div className="story">
                   <img src={currentUser.profilePic} alt="" />
               <span>{currentUser.name}</span>
-              <button>+</button>
+              <div className="button">
+                  <button>+</button>
+              </div>
+              
               </div>
           {stories.map(story => (
               <div className="story" key={ story.id}>
