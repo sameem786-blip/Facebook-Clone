@@ -1,0 +1,9 @@
+@import "../../style.scss";
+
+.dashboard{
+    @include themify($themes) {
+        background-color: themed("bgSoft");
+        color: themed("");
+        padding: 20px 70px;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './rightbar.scss'
 import Profile2 from '../../assets/images/profile2.jpg';
+
 const Rightbar = () => {
   return (
     <div className="rightbar">
