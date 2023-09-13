@@ -10,6 +10,13 @@
         color: themed("textColor");
         overflow-x: hidden;
         overflow-y: scroll;
+        @include mobile {
+                display: none;
+            }
+        
+            @include tablet {
+                display: none;
+            }
         -ms-overflow-style: none;
         /* IE and Edge */
         scrollbar-width: none;
