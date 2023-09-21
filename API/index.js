@@ -4,14 +4,16 @@ import likesRoutes from "./routes/likes.js";
 import commentsRoutes from "./routes/comments.js";
 import postsRoutes from "./routes/posts.js";
 import usersRoutes from "./routes/users.js";
-import cookieParser from "cookie-parser";
+import  cookieParser  from "cookie-parser";
 import cors from "cors";
 
 const app = express();
 
 //middlewares
 app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin",true)
     res.header("Access-Control-Allow-Credentials",true)
+    res.header("Access-Control-Allow-Headers",true)
 
     next()
 })

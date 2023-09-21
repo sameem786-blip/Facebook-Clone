@@ -46,6 +46,7 @@ export const login = (req, res) => {
 
         res.cookie("accessToken", token, {
             httpOnly: true,
+            sameSite: 'None',
         }).status(200).json(others)
         return res.status(200).json({ message: "user logged in" })
     })
@@ -53,7 +54,7 @@ export const login = (req, res) => {
 
 export const logout = (req, res) => {
     res.clearCookie("accessToken", {
-        secure: true,
+        secure: false,
         sameSite: "none",
     }).status(200).json({ message: "user logged out" })
 }
