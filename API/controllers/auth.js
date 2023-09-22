@@ -48,7 +48,6 @@ export const login = (req, res) => {
             httpOnly: true,
             sameSite: 'None',
         }).status(200).json(others)
-        return res.status(200).json({ message: "user logged in" })
     })
 }
 

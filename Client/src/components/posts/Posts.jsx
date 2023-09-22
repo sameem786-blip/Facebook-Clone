@@ -8,8 +8,11 @@ const Posts = () => {
   const { isLoading, error, data } = useQuery({
     queryKey: ['posts'],
     queryFn: () =>
-      makeRequest.get('/posts').then(
+      makeRequest.get('/posts', {
+        credentials: 'include',
+      }).then(
         (res) => res.data,
+        // console.log(data)
       ),
   });
 
