@@ -12,9 +12,13 @@ const Share = () => {
 
   const upload = async () => {
     try {
+      console.log(1)
       const formData = new FormData();
+      console.log(2)
       formData.append("file", file);
+      console.log(3)
       const res = await makeRequest.post("/upload", formData);
+      console.log(4)
       return res.data;
     } catch (err) {
       console.log(err);
@@ -30,7 +34,10 @@ const Share = () => {
       return makeRequest.post("/posts", newPost);
     },
     {
-      onSuccess: () => {
+    onError: (error) => {
+      console.error("Error adding post:", error);
+      },
+     onSuccess: () => {
         // Invalidate and refetch
         queryClient.invalidateQueries(["posts"]);
       },
@@ -41,7 +48,8 @@ const Share = () => {
     e.preventDefault();
     let imgUrl = "";
     if (file) imgUrl = await upload();
-    mutation.mutate({ desc, img: imgUrl });
+
+    mutation.mutate({ desc, img: imgUrl })
     setDesc("");
     setFile(null);
   };
